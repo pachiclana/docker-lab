@@ -3,8 +3,8 @@ ENV TZ="Europe/Madrid"
 
 WORKDIR /usr
 
-#Copy the simple code
-COPY ../src /usr/src/
+#Copy the python code
+COPY /multi-platform-tests/src /usr/src/
 
 # Install python/pip
 ENV PYTHONUNBUFFERED=1
