@@ -4,7 +4,7 @@ ENV TZ="Europe/Madrid"
 WORKDIR /usr
 
 #Copy the simple code
-COPY src /usr/src/
+COPY ../src /usr/src/
 
 # Install python/pip
 ENV PYTHONUNBUFFERED=1
