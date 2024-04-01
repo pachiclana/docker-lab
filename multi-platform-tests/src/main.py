@@ -1,12 +1,9 @@
 import time
 import sys
-import datetime
+from datetime import datetime
 
 print(sys.version)
 
-now = datetime.datetime.now()
-print(now.strftime('%Y-%m-%d %H:%M:%S') + ('-%02d' % (now.microsecond / 10000)))
-
 while True:
-    print("Docker is working!")
+    print(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}  Docker is working!")
     time.sleep(5)
